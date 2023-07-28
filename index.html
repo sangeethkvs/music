@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>music</title>
+    
+</head>
+<body>
+    <header>
+        <CENTER><h1>HEAR IT</h1></CENTER>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#"title="Home">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#" title="Contact Us">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#" title="Search">Search</a>
+                </li>
+                <li>
+                    <a href="#" title="favourite">favourite</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="text">
+        <p>Feel the music</p>
+        <img class="button" src="play.png" alt="play" id="icon">
+        <audio id="song" src="WhatsApp Audio 2023-07-28 at 10.12.01 AM.mpeg" type="audio/mp3"></audio>
+    
+    </main>
+             <footer>
+                <p>Copyright &copy;2023</p>
+             </footer>
+
+             <script>
+                   var song=document.getElementById('song');
+                   var icon=document.getElementById('icon');
+                   icon.onclick=function(){
+                    if(song.paused){
+                        song.play();
+                        icon.src="pause.png";
+                    }
+                     else{song.pause();
+                    icon.src="play.png";
+                   }
+                   }
+             </script>
+</body>
+</html>
